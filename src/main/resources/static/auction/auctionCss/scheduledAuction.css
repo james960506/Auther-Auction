@@ -1,0 +1,433 @@
+body{
+	width:100%;
+	height:100%;
+}
+
+#checkId{
+	width: 96%;
+	border: 1px black solid;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2%;
+	height: 9%;
+	margin-left: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 10px;
+}
+
+#priceTag{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+	
+#priceTag::-webkit-scrollbar { 
+	display: none;
+}
+
+#bidModal::-webkit-scrollbar { 
+	display: none;
+}
+	
+.modal-content {
+	background-color: #fefefe;
+	margin:10% auto 10% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	border-radius: 10px;
+}
+	
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.trLine {
+	border-bottom: 1px gray solid;
+}
+
+#lotNum {
+	font-size: x-large;
+}
+
+#lotNumDiv {
+	margin: 2% 0 0 2%;
+}
+
+.productInfo {
+	margin: 4.825% 0 4% 2%;
+}
+	
+.infoSpan {
+	border: 1px black solid;
+	margin-left: 2%;
+	margin-right: 3%;
+	width: 30%;
+	height: 8%;
+	padding-top: 2%;
+	padding-bottom: 1.5%;
+	display: inline-block;
+	border-radius: 10px;
+}
+	
+#authorPlace {
+	font-size: large;
+	font-weight: 500;
+}
+	
+#productPlace{
+	font-size: 80px;
+	font-weight: 1000;
+}
+	
+#authorPlaceCover{
+	margin-bottom: 9%;
+}
+	
+.picModal{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	height:100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+	
+	
+.picModal_content{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-color:white;
+	border-radius:10px;
+	postion:relative;
+	z-index:8;
+	width: 700px;
+	height: 700px;
+	margin:auto;
+	margin-top:6%;
+}
+	
+	
+#closePicModal{
+	background:black;
+	color:white;
+	float:right;
+	border-radius: 5px;
+	cursor:pointer;
+}
+	
+#picModalImg{
+	width:650px;
+	height:650px;
+	padding-left:50px;
+	padding-top:25px;
+	z-index:100;
+	border-radius: 10px;
+}
+	
+#explain{
+	font-size: 25px;
+	font-family: inherit;
+}
+	
+img{
+	border-radius: 10px;
+}
+	
+#forInfoPlace{
+	display:flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+	
+.tooltip {
+    position: absolute;
+    width:500px;
+    left: -1px;
+    top: 52px;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.tooltip:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid none;
+    border-left: 20px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 8px solid black;
+}
+#fees:hover .tooltip{
+	display: block;
+	opacity: 1;
+}
+  
+.item{
+  width: 50%;
+  	height: 200px;
+  	display:flex;
+  	align-items:center;
+  	text-align:center;
+  	justify-content:center;
+  	cursor:pointer;
+  }
+		
+#api {
+	width: 600px;
+	margin-left: 15%;
+	margin-bottom: 3%;
+	height: 200px;
+}
+		
+.owl-carousel{
+}
+	
+#explain{
+	background-color: E6E6FA;
+	padding:10px;
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+
+#content-allOver-cover{
+	width: 70%;
+	margin: auto;
+	margin-top: 8%;
+	display: flex;
+	height: 100%;
+	postion: absolute;
+}
+
+#content-left{
+	width: 49%;
+	display: inline-block;
+}
+
+#leftImg{
+	 width: 600px;
+	 height: 600px;
+	 border-radius: 30px;
+}
+
+#contentRightCover{
+	width: 49%;
+	position: absolute;
+	left: 900px;
+	z-index: 0;
+}
+
+#contentRightCoverDiv{
+	 width: 600px;
+	 height: 800px;
+}
+
+#timerZone{
+	text-align: right;
+	margin: 1% 1% 1%;
+}
+
+#lengthZone{
+	height: 100%;
+	width: 98%;
+}
+
+#fH1{
+	 margin-left: 2%;
+	 width: 96%;
+	 margin-top: 3%;
+}
+
+#srtMoneySpan{
+	text-align: left;
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#moneyZone{
+	float: right;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#fHr{
+	 margin-left: 2%;
+	 width: 96%;
+}
+
+#nowPriceWord{
+	text-align: left;
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#nowPrice{
+	float: right;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#sHr{
+	 margin-left: 2%;
+	 width: 96%;
+}
+
+#lastDay{
+	text-align: left;
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#realDate{
+	float: right;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: x-large;
+	font-weight: 600;
+}
+
+#tHr{
+	 margin-left: 2%;
+	 width: 96%;
+	 margin-bottom: 3%;
+}
+
+#fees{
+	 display : inline-block;
+	 position:relative
+}
+
+#picturePlace{
+	width: 34.3%;
+	display: flex;
+	margin-top:0.25%;
+	margin-left:15%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#rename{
+	width: 100px;
+	height: 100px;
+	margin:auto;
+	margin-left:85px;
+}
+
+#noShow{
+	text-align:center;
+	display:none;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+}
+
+#divs{
+	 width: 600px;
+	 margin-left: 15%;
+}
+
+#divsSec{
+	font-size:40px;
+	font-weight: 1000;
+}
+
+#priceTag{
+	 display: none;
+}
+
+#modal-content{
+	 width: 30%;
+}
+
+#modalH2{
+	 text-align: center;
+	 background-color: black;
+	 width:90%;
+	 margin:auto;
+	 color: white;
+	 height: 50px;
+	 padding-top: 10px;
+	 border-radius: 15px;
+}
+
+#modalTable{
+	margin: auto;
+	border-collapse: collapse;
+	text-align: center;
+	width: 80%;
+}
+
+#fTr{
+	 width: 65%;
+	 margin-left: 30%
+}
+
+#sTr{
+	width: 35%
+}
+
+#modalDiv{
+	text-align: right;
+	margin-top: 2%;
+	margin-right: 5%;
+}
+
+#closePriceTag{
+	width: 10%;
+	color:white;
+	background:black; 
+	border-radius: 10px;
+}

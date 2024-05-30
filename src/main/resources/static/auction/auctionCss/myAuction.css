@@ -1,0 +1,134 @@
+.auction{
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px black solid;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	text-align: center;
+	cursor:pointer;
+	transform: scale(1.00);
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	box-shadow: 0px 0px 0px black;
+}
+
+.auction:hover{
+	transform: scale(1.0001);
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	box-shadow: 1.5px 1.5px 4px black;
+}
+
+.info{
+	width: 14%;
+	margin-top: 1%;
+	margin-bottom: 1%; 
+	font-weight: 525;
+}
+
+.infoCover{
+	background: #f0f0f0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+.seeWhich{
+	width: 9%;
+	display: inline-block;
+	text-align: center;
+	padding: 1%;
+	font-weight: 800;
+}
+
+.price{
+	font-weight: 500;
+}
+
+.price:hover{
+	cursor:pointer;
+	font-weight: 800;
+}
+
+#content-allOver-cover{
+	 width: 100%;
+	 height: 100%;
+}
+	
+#divine{
+	 width: 100%;
+	 height: 100%;
+	 min-height: 950px;
+}
+
+#headline{
+	 width: 70%;
+	 margin: auto;
+}
+
+#partList{
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: x-large;
+	font-weight: 1000;
+}
+
+#btnPlace{
+	width: 100%;
+}
+
+.seeWhich{
+	background: #f0f0f0;
+}
+
+#seeWhich{
+	background: gray
+}
+
+#sortUp{
+	float:right;
+	margin-left:1%;
+}
+
+#sortDown{
+	float:right;
+}
+
+#noDataDiv{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px black solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.divs{
+	width: 14%;
+}
+
+.renameDiv{
+	width: 14%;
+	height: 100%;
+}
+
+.imgZone{
+	height: 100px;
+	width: 100px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.biddingStatus{
+	width: 14%;
+}
+
+ .myBidListPrice{
+ 	width: 14%;
+ }
